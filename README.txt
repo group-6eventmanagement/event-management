@@ -1,4 +1,4 @@
-# event-management
+## event-management
 # A project to manage participants for campus event 
 This Event Registration System is to help manage participants for campus events.  
 It allows students to register for events, view participant lists, and automatically limit registrations when an event reaches full capacity.  
