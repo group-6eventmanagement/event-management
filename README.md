@@ -1,6 +1,6 @@
 # event-management
 A project to manage participants for campus event 
-## Group members, matric number and cntribution
+## Group members, matric number and contribution
 ONYEACHO ANTHONY | 23/1541| DATABASE DESIGN
 RAPHAEL EJIRE-ABEE | 23/2069 | BACKEND DEVELOPER(FORM HANDLING-POST AND DATA DISPLAY-GET)
 ONABAMIRO MOYOSORE FAITH | 23/0550 | FRONTEND DEVELOPER
