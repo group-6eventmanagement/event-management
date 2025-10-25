@@ -1,5 +1,9 @@
 <?php
 require 'event_registration_system.php';
+require 'EmailSimulator.php';
+
+// Initialize email simulator
+$emailSimulator = new EmailSimulator($conn);
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: index.php');
@@ -22,7 +26,17 @@ if (isset($_POST['type']) && $_POST['type'] === 'contact') {
     $stmt = $conn->prepare("INSERT INTO messages (name, email, phone, message) VALUES (?, ?, ?, ?)");
     $stmt->bind_param('ssss', $name, $email, $phone, $message);
     if ($stmt->execute()) {
-        echo "<p style='color:green;'>Message sent. We'll reach out soon.</p>";
+        $message_id = $stmt->insert_id;
+        
+        // Send acknowledgment email
+        $emailSimulator->sendContactAcknowledgment([
+            'id' => $message_id,
+            'name' => $name,
+            'email' => $email,
+            'message' => $message
+        ]);
+        
+        echo "<p style='color:green;'>Message sent. We'll reach out soon. A confirmation email has been sent.</p>";
         echo "<p><a href='index.php'>Back to home</a></p>";
     } else {
         echo "<p style='color:red;'>Error sending message: " . htmlspecialchars($stmt->error) . "</p>";
@@ -72,12 +86,39 @@ if (!$stmt2->execute()) {
 $user_id = $stmt2->insert_id;
 $stmt2->close();
 
+// Send registration confirmation email
+$emailSimulator->sendRegistrationConfirmation([
+    'id' => $user_id,
+    'name' => $name,
+    'email' => $email,
+    'srn' => $srn
+]);
+
 // If event selected, add participant
 if ($event_id > 0) {
     $phone = $srn;
     $stmt3 = $conn->prepare("INSERT INTO participants (event_id, fullname, email, phone) VALUES (?, ?, ?, ?)");
     $stmt3->bind_param('isss', $event_id, $name, $email, $phone);
     if ($stmt3->execute()) {
+        $participant_id = $stmt3->insert_id;
+        
+        // Get event details for confirmation email
+        $eventStmt = $conn->prepare("SELECT * FROM events WHERE id = ?");
+        $eventStmt->bind_param('i', $event_id);
+        $eventStmt->execute();
+        $eventResult = $eventStmt->get_result();
+        $event = $eventResult->fetch_assoc();
+        $eventStmt->close();
+        
+        // Send event confirmation email
+        if ($event) {
+            $emailSimulator->sendEventConfirmation([
+                'id' => $participant_id,
+                'name' => $name,
+                'email' => $email
+            ], $event);
+        }
+        
         header("Location: index.php?registered=1");
         exit;
     } else {
