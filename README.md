@@ -29,3 +29,32 @@ OSAWUTA NDUKA CHRIS | 23/1473 | SEARCH FILTER AND EMAIL STIMULATION
 MBAONU JEZREEL ABIODUN | 23/O383 | EMAIL STIMULATION ENGINEER AND TESTING
 OKORARE OLUWAPELUMI DEBORAH | 23/1657 | DATABASE DESIGN | DOCUMENTATION, README, AND GIT REPOSITORY
 OGUNSINA MOYINOLUWA SAMANTHA | 23/0842 | UI, SCREENSHOTS AND PRESENTATION
+
+## Home Page:-
+![Home page](images/Screenshot(10).png)
+## View Events Page:-
+![View Events Page](images/Screenshot(11).png)
+## Event Details Page:-
+![Event Details Page](images/Screenshot(21).png)
+## Database Connection page:-
+![Database Connection](images/Screenshot(4).png)
+## Register Page:-
+![Enter Details](images/Screenshot(12).png)
+## Entered Details:-
+![Participant Registration](images/Screenshot(13).png)
+## Registration Successful:-
+![Registration Successful](images/Screenshot(14).png)
+## Login Page:-
+![Participant Login](images/Screenshot(15).png)
+## Welcome User:-
+![Login successful](images/Screenshot(16).png)
+## Contact Page:-
+![Enter details and messages](images/Screenshot(17).png)
+## Messages Sent to Database:-
+![Message sent](images/Screenshot(18).png)
+## Messages Database Page:-
+![Messages Database](images/Screenshot(19).png)
+## Users Database Page:-
+![Users Database](images/Screenshot(20).png)
+
+
