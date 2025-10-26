@@ -102,7 +102,7 @@ OGUNSINA MOYINOLUWA SAMANTHA | 23/0842 | UI, SCREENSHOTS AND PRESENTATION
 ---
 
 ## 🏠 Home Page
-![Home Page](images/Screenshot10.png)
+![Home Page](Images/Screenshot (10).png)
 
 ## 🎫 View Events Page
 ![View Events Page](images/Screenshot11.png)
