@@ -37,4 +37,5 @@ $event = isset($_GET['event']) ? intval($_GET['event']) : 1;
     <p>&copy; 2025 Events. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
