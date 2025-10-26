@@ -85,7 +85,7 @@ Search and filter functionality
 User-friendly and responsive interface. 
 
 
-Group members, matric number and contribution
+## Group members, matric number and contribution
 ```markdown
 
 ONYEACHO ANTHONY | 23/1541| DATABASE DESIGN AND PROJECT MANAGER
