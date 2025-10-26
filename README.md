@@ -105,34 +105,34 @@ OGUNSINA MOYINOLUWA SAMANTHA | 23/0842 | UI, SCREENSHOTS AND PRESENTATION
 ![Home Page](Images/Screenshot10.png)
 
 ## 🎫 View Events Page
-![View Events Page](images/Screenshot11.png)
+![View Events Page](Images/Screenshot11.png)
 
 ## 🧾 Event Details Page
-![Event Details Page](images/Screenshot21.png)
+![Event Details Page](Images/Screenshot21.png)
 
 ## 💾 Database Connection Page
-![Database Connection](images/Screenshot4.png)
+![Database Connection](Images/Screenshot4.png)
 
 ## 📝 Register Page
-![Register Page](images/Screenshot12.png)
+![Register Page](Images/Screenshot12.png)
 
 ## 🧍 Participant Registration
-![Participant Registration](images/Screenshot13.png)
+![Participant Registration](Images/Screenshot13.png)
 
 ## ✅ Registration Successful
-![Registration Successful](images/Screenshot14.png)
+![Registration Successful](Images/Screenshot14.png)
 
 ## 🔐 Login Page
-![Participant Login](images/Screenshot15.png)
+![Participant Login](Images/Screenshot15.png)
 
 ## 👋 Welcome User
-![Login Successful](images/Screenshot16.png)
+![Login Successful](Images/Screenshot16.png)
 
 ## ✉ Contact Page
-![Contact Page](images/Screenshot17.png)
+![Contact Page](Images/Screenshot17.png)
 
 ## 📤 Messages Sent to Database
-![Message Sent](images/Screenshot18.png)
+![Message Sent](Images/Screenshot18.png)
 
 ## 📦 Messages Database Page
 ![Messages Database](Images/Screenshot19.png)
