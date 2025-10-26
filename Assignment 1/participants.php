@@ -34,4 +34,5 @@ if (isset($_GET["event_id"])) {
 } else {
     echo "<p>No event selected.</p>";
 }
+
 ?>
