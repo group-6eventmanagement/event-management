@@ -102,7 +102,7 @@ OGUNSINA MOYINOLUWA SAMANTHA | 23/0842 | UI, SCREENSHOTS AND PRESENTATION
 ---
 
 ## 🏠 Home Page
-![Home Page](Images/Screenshot (10).png)
+![Home Page](Images/Screenshot10.png)
 
 ## 🎫 View Events Page
 ![View Events Page](images/Screenshot11.png)
@@ -135,8 +135,8 @@ OGUNSINA MOYINOLUWA SAMANTHA | 23/0842 | UI, SCREENSHOTS AND PRESENTATION
 ![Message Sent](images/Screenshot18.png)
 
 ## 📦 Messages Database Page
-![Messages Database](Images/Screenshot (19).png)
+![Messages Database](Images/Screenshot19.png)
 
 ## 👥 Users Database Page
-![Users Database](Images/Screenshot (20).png)
+![Users Database](Images/Screenshot20.png)
 
