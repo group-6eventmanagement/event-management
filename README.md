@@ -19,6 +19,72 @@ The system also helps keep track of participants and makes sure that no event go
 The project was developed using PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap. 
 It was a group project aimed at learning how to build a functional web application that handles real-world event registration and management tasks.
 
+## Project setup 
+
+🔗 Prerequisites
+
+Before you begin, you need to install XAMPP on your computer.
+
+Download XAMPP here → XAMPP Download for Windows, Mac OS, and Ubuntu
+
+Follow the setup steps for your system:
+
+For Windows
+
+For Mac OS
+
+For Ubuntu
+
+If you prefer, you can use other local servers such as:
+
+WAMP (Windows)
+
+LAMP (Ubuntu/Linux)
+
+MAMP (Mac OS)
+
+AMPPS, WPN-XM, or EasyPHP
+
+🔗 Running the Project on Your Local Machine
+
+Clone the project to your computer using the GitHub link:
+https://github.com/group-6eventmanagement/event-management.git
+
+Copy the project folder into the htdocs folder inside your XAMPP directory.
+
+Open XAMPP Control Panel, and make sure both Apache and MySQL are running.
+
+Open your browser and type the following in the address bar:
+http://localhost/event-management/public/
+
+🔗 Working with phpMyAdmin
+
+Open your browser and visit:
+http://localhost/phpmyadmin/
+
+Create a new database (you can name it event_management).
+
+Import the SQL file provided in the sql/ folder.
+
+Once the import is done, the database tables will appear automatically.
+
+If needed, you can view or edit data directly from phpMyAdmin (for example, add an admin or user record).
+
+🔗 Features
+
+User registration and login
+
+Admin dashboard to manage events
+
+Create, update, or delete events
+
+Event capacity management (prevents overbooking)
+
+Search and filter functionality
+
+User-friendly and responsive interface. 
+
+
 Group members, matric number and contribution
 ```markdown
 
