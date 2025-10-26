@@ -6,6 +6,12 @@ It allows students to register for events, view participant lists, and automatic
 The project also includes a search/filter function and a simulated confirmation email (no actual emails sent).
 
 ## Overview of the project
+>This project consists of the following pages
+>- A landing page
+>- A login and Registration Page
+>- Event Page
+>- Event Details 
+
 
 🔗 This project is an Event Management System designed to help organize and manage school or campus events. 
 It allows users to register for events, and lets the admin create, edit, and delete events. 
