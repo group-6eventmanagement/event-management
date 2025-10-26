@@ -138,5 +138,5 @@ OGUNSINA MOYINOLUWA SAMANTHA | 23/0842 | UI, SCREENSHOTS AND PRESENTATION
 ![Messages Database](images/Screenshot19.png)
 
 ## 👥 Users Database Page
-![Users Database](images/Screenshot20.png)
+![Users Database](Images/Screenshot20.png)
 
