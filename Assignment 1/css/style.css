@@ -1,0 +1,418 @@
+/* === Animated Gradient Background for all pages === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #ffcc00, #a16d1e, #97723c, #222);
+    background-size: 800% 800%;
+    animation: gradientMove 15s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ===================== GLOBAL STYLES ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+  color: #333;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  color: white;
+  position: relative;
+}
+
+.navbar .logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.navbar nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #a47023;
+}
+
+/* Mobile menu */
+.nav-toggle { display:none; cursor:pointer; font-size:24px; color:white; background:none; border:none; }
+@media (max-width: 800px) {
+  .navbar { padding: 10px 20px; }
+  .navbar .logo img { width:70px; height:70px; }
+  .navbar nav { display:none; position:absolute; right:20px; top:80px; background:#000; padding:12px 16px; border-radius:8px; flex-direction:column; gap:10px; box-shadow:0 6px 18px rgba(0,0,0,0.3); }
+  .nav-open { display:flex !important; }
+}
+
+/* ===================== HOME PAGE ===================== */
+.home .hero {
+    position: relative;
+    background-image: url('js/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.home .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.home .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.home .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.home .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.home .hero-content .btn {
+    background-color: #a47023;
+    color: #222;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.home .hero-content .btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.home .events {
+    padding: 60px 100px;
+    text-align: center;
+}
+
+.home .events h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.home .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.home .event-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.home .event-card:hover {
+    transform: scale(1.05);
+}
+
+.home .event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.home .event-card h3 {
+    margin: 15px;
+    font-size: 1.2rem;
+}
+
+.home .event-card p {
+    margin: 0 15px 15px;
+}
+
+.home .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+#search, #filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+.auth {
+  background: #f4f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth .auth-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.auth .auth-container input,
+.auth .auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth .auth-container button {
+  background: #a16d1e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.auth .auth-container button:hover {
+  background: #a47023;
+}
+
+/* ===================== CONTACT PAGE ===================== */
+.contact {
+  background: #f4f6fa;
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 20px;
+}
+
+.contact .contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-left, .contact-right {
+  flex: 1 1 400px;
+}
+
+.contact-left h2, .contact-right h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.contact-left form input,
+.contact-left form textarea,
+.contact-left form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-left form button {
+  background: #a47023;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-left form button:hover {
+  background: #97723c;
+}
+
+
+footer {
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 900px) {
+    .home .hero { height: 60vh; background-position: center top; }
+    .home .hero-content h1 { font-size: 2rem; }
+    .home .hero-content p { font-size: 1rem; }
+    .home .events { padding: 40px 20px; }
+    .home .event-list { flex-direction: column; align-items: center; gap: 16px; }
+    .home .event-card { width: 100%; max-width: 420px; }
+    .home .search-section { flex-direction: column; gap: 10px; padding: 10px; }
+}
+
+@media (max-width: 480px) {
+    .home .hero-content h1 { font-size: 1.5rem; }
+    .home .hero-content p { font-size: 0.9rem; }
+    .home .hero-content .btn { padding: 10px 16px; font-size: 14px; }
+    .navbar .logo img { width:60px; height:60px; }
+}
+
+
+
+.event-card .btn {
+    background-color: #a47023;  
+    color: #222;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.event-card .btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+
+/* === Forgot Password Page === */
+.forgot-page {
+    background: url('js/images/hero.jpg') no-repeat center/cover; /* hero-style background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.forgot-page::after {
+    content: "";
+    position: absolute;
+    top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.5); /* dark overlay */
+    z-index: 1;
+}
+
+.forgot-container {
+    position: relative;
+    z-index: 2; /* above overlay */
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: fadeInUp 1s ease forwards; /* nice fade-in animation */
+}
+
+.forgot-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.forgot-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.forgot-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.forgot-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a16d1e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forgot-container button:hover {
+    background-color: #97723c;
+}
+
+.back-link {
+    display: block;
+    margin-top: 15px;
+    color: #a16d1e;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* === Animation === */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
